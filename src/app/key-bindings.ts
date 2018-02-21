@@ -80,7 +80,7 @@ const keyBindings: KeyBindings = {
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;
-            link.download = `polygon.${new Date().toISOString().replace(/[:]/g, '-')}.svg`;
+            link.download = `area-scales.${new Date().toISOString().replace(/[:]/g, '-')}.svg`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
